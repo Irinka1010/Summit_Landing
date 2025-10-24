@@ -1,0 +1,1544 @@
+
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />		
+		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />		
+		<title>Умови надання послуг</title>		
+		<meta property="og:image" content="logotip.png" />
+		<meta property="og:title" content="Умови надання послуг" />	
+		
+		<meta name="description" content="Умови надання послуг" />
+		<meta property="og:description" content="Умови надання послуг" />		
+		<link rel="shortcut icon" href="logotip.png" type="image/x-icon" />
+      
+
+		<style>
+			:root { 
+				--collor-box:#AA9550;
+				--bg-main-1:rgba(26, 56, 10, 1);
+				--bg-main-2:rgba(20, 28, 15,0.96);
+				--bg-main-3:rgba(103, 2, 20,0.98);
+				--color-tex:rgba(226,217,186,1);
+				--bg-sec:#666666;
+				--accent:rgba(170,149,80,1);
+                 --els:0;
+				
+                --white-color: #fff;
+				--section-color:#ffffff;
+				--black-color: #0a1b16;
+				--hover-tranz: all .5s cubic-bezier(.3,1,.35,1) 0s;		
+				
+
+			}
+			
+			body{			
+				direction: ltr;
+				font-family: 'Playfair Display', sans-serif !important;
+				font-size: 17px;
+				margin: 0;
+				padding: 0px;
+				line-height: 1.5; 				
+			
+			}
+            html {
+				scroll-behavior: smooth;
+			} 
+			* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			}
+			a{
+			text-decoration: none;
+			list-style: none;
+			cursor: pointer;
+			}           
+			input:focus, textarea:focus, select:focus {
+			outline: none;
+			}
+			h2{
+			font-size: clamp(21px,4vw,36px)!important;
+			}
+			img, video{
+			max-width: 100%;
+			}
+			ul{
+			list-style: none;               
+			}
+			[type='checkbox'] {
+			box-sizing: border-box;
+			padding: 0;
+			}
+			.wrappar{
+				background-color: ;
+			}
+           .main-container{
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px; 
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+		   }
+           .pad-section{
+			padding:28px 0;
+			
+		   } 
+		   .bg-box{		
+			position: relative;
+			background-image: url(patrn.png);
+			background-repeat: repeat;
+			background-position: center;
+			background-size: contain;
+
+		   }
+		   .bg-box::before{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			content: "";
+			z-index: -1;
+			background-color: var(--bg-main-1);
+		   }
+		   .header-top-box{
+			width: 100%;
+			height: 308px;
+			position: relative;
+			
+		   }
+		   .border{
+			    transition: all 0.2s ease-in-out;
+			    border: 2px dashed rgba(170, 149,80);
+			    box-shadow:  0 1px 3px rgba(0, 0, 0, .5);
+		   }
+		   .slides{
+			position: relative;
+			height: 100%;
+            width: 100%;
+			overflow: hidden; 
+			transition: transform 0.5s ease-in-out;
+		   }
+		   .slide{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+		   }
+		   .slide.active{
+			 opacity: 1;
+		   }
+		   .logo-section{
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			transform: translate(-50%);		
+			width: 103%;
+		   }
+		   .top-box{
+			width: 100%;
+			height: 100%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-inline-start: 120px;
+			padding-inline-end: 20px;
+			background-color: #0a1b16eb;
+			position: relative;
+		   }
+		   .top-box::before,.top-box::after{
+			content: "";
+			width: 1px;
+			height: 1px;
+			position: absolute; 	
+			bottom: -15%;
+			border-top: 0px solid #0a1b16eb;
+			
+			border-bottom: 0;
+			
+			 
+		   }
+		   .top-box::before{
+			left: 0px;
+			border-right: 0;
+			border-left: 10px solid transparent;
+		   }
+		   .top-box::after{
+			right: 0px;
+		    border-left: 0;
+		    border-right: 10px solid transparent;
+		   }
+		   
+		   
+		   .title-top{
+			color: var(--accent);
+			font-size: 25px;
+			font-weight: 600;
+		   }
+		   .logo-box{
+			position: absolute;
+			inset-inline-start: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100px;
+			height: 100px;			
+			background-color: #0a1b16eb;
+			border-radius:  50%;
+			
+
+		   }
+		   .logo-link{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+				img{
+					width: 64px;
+					height: 64px;
+					object-fit: contain;
+				}
+		   }
+		   .color-bg{
+			
+			background-color: #0a1b16;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+			color: var(--color-tex);
+		   }
+		   .pad-20{
+			padding: 20px;
+		   }
+		   .about-blok{
+			display: flex;
+			gap: 15px;
+			flex-direction: row;
+			
+		   }
+		   .nav-box{
+			flex: 1;			
+		   }
+		   .nav-img{
+			width: 100%;
+			height: 200px;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		   }
+		   .flex-box-colum{
+             display: flex;
+			 flex-direction: column;
+			 gap: 40px;
+			 justify-content: center;
+		   }
+		   .nav-list{
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		   }
+		   .nav-list li a,.priceJK,.tarif-item{
+			display: block;
+			text-align: center;
+             background-color: var(--black-color);
+			 padding: 10px 15px;
+			 color: var(--accent);
+			 transition:  border-color .4s ease 0s, color .4s ease 0s;
+			 border: 2px solid var(--accent);  
+		   }
+		   .nav-list li:hover a{
+             border-color: #fff;
+			 color: var(--color-tex); 
+		   }
+		   .d-f-group{
+			display: flex;
+			flex-direction:  column-reverse;
+		   }
+		   .priceJK{
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		   }
+		   .lain{
+			height: auto;
+			flex: 0 0 auto;			
+			border-left: 2px solid var(--accent);
+		   }
+		   .about-content{
+			flex: 2;
+			
+		   }
+		   .title-box{
+               color: var(--accent);
+			   font-weight: 600;
+			   text-align: left;
+		   }
+		   .slog{
+			text-align: end;
+		   }
+		   .servis-list{
+			display: flex;
+			gap: 21px;
+			flex-direction: column-reverse;
+		   }
+		   .sub-title{
+			 font-style: italic;
+			 font-size: 19px;
+		   }
+		   .servis-group{
+			display: flex;
+			flex-direction: column;
+			gap: 21px;
+		   }
+		   .servis-item{
+			flex: 1;
+			display: flex;
+			gap: 20px;
+			flex-direction: row;
+			
+		   }
+		   .servis-item:last-child{
+			flex-direction: row-reverse;
+		   }
+		   .servis-element{
+			flex: 1;
+		   }
+		   .bg-element-img{
+			overflow: hidden;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 200px;
+			transition: all 0.2s ease-in-out;
+		   }
+		   .servis-item:hover .bg-element-img{
+              transform: scale(1.06);
+		   }
+		   .tervis-title{
+			font-size: 16px;
+			text-align: center;
+		   }
+		   .main-box{
+			min-height: 360px;
+			padding: 15px;
+			border-radius:  0px;
+			background-color: var(--black-color);
+		   }
+		   .radius{
+             border-radius: 20px;
+		   } 
+		   	.main-picture{
+				max-height: 360px;
+				object-fit: contain;
+				
+				float: right;
+				width: 37%;
+				margin: 15px;
+				margin-top: 0;
+				margin-right: 0;
+
+			}
+			.main-content p{
+				margin-bottom: 10px;
+				text-indent: 3ch;
+			}
+			.main-content ul,ol{
+				list-style: inside;
+			}
+			.flex-row{
+				display: flex;
+				gap: 30px;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+			.footer-wrapper{
+				padding: 20px 0;
+				display: flex;
+				gap: 20px;
+				font-size: 14px;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			.footer-pad{
+				padding:28px 0 0;
+			}
+			.footer-bg{
+			    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+				color: #C6BA92;
+				background-color: #716335;
+			}
+			.footer-copyright,.footer-link-list{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				align-items: center;
+			}
+			.footer-link{
+				color: #C6BA92;
+				transition: color 1s ease-in-out;
+			}
+			.footer-link:hover,.footer-link:focus{
+				color: #fff;
+			}
+			.map-box{
+				display: flex;
+				overflow: hidden;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+				iframe{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.form-wrapper{
+				display: flex;
+				gap: 30px;
+				flex-direction: column;
+			}
+			.form-img{
+				width: 100%;
+				height: 100%;
+				min-height: 250px;
+				background-image: url(bg/0_bg.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				
+				
+
+			}
+			.form-box{
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				padding: 20px;
+				background-color: var(--black-color);
+				
+			}
+			.input-t21057560,.textarea-t21057560{
+               width: 100%;
+			   padding:10px 20px;
+			   color:#fff;
+               outline: none;
+			   background-color:transparent;
+			   border:2px solid var(--accent);
+			}
+			.input-t21057560:hover,.textarea-t21057560:hover{
+				 border:2px solid #fff;
+			}
+			.textarea-t21057560{
+				min-height: 100px;
+			}
+			.form-check{
+				display: flex;
+				flex-wrap: wrap;
+				font-size: 15px;
+				gap: 8px;
+				a{
+					color: inherit;
+				}
+			}
+
+			.tarif-blok{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				flex-direction: row;
+			}
+			.tarif-element{
+				flex: 1;
+				flex-direction: column;
+				overflow: hidden;
+				width: 100%;
+				display: flex;
+				background-color: var(--black-color);
+				gap: 20px;
+			}
+			.extreme{
+				flex: 1;
+			}
+			.central{
+				flex: 2;
+			}
+			.tarif-name{
+				padding: 20px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				flex-direction: column;
+				gap: 10px;
+				font-size: 25px;
+				
+			}
+			.tarif-content{
+
+				padding: 20px 0;
+				display: flex;
+				justify-content: start;
+				flex-direction: column-reverse;
+				gap: 20px;
+				align-items: center;
+			}
+			.tarif-list{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				
+			}
+			.tarif-list li{
+				display: flex;
+				padding: 8px;
+				border-top: 1px dashed var(--collor-box);
+				gap: 8px;
+				align-items: center;
+				font-size: 13px;
+			}
+			.tarif-list li:last-child{
+				border-bottom: 1px solid var(--collor-box);
+			}
+			.tarif-icon{
+				width: 20px;
+				height: 20px;
+				flex:  0 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid var(--accent);
+				border-radius: 50%;
+				background-color: var(--black-color);
+				svg{
+					width: 15px;
+					height: 15px;
+					fill: #fff;
+				}
+			}
+			.tarif-svg{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				svg{
+					width: 56px;
+					height: 56px;
+					fill:  #c0392b;					
+					color: #c0392b;
+					display: inline-block;
+				}
+			}
+			.tarif-standart{
+				background-color: #716335;
+			}
+			.tarif-standart .tarif-svg svg{
+				color: #000;
+			}
+			
+			.tarif-box{
+				padding: 30px;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 1;
+				overflow: hidden;
+				
+			}
+			
+			.iner-tarif{
+				position: relative;
+			}
+			.tarif-button{
+				margin: auto 0 0;
+			}
+			.tarif-price{
+				
+				width: 100%;
+				border: none;
+				border-top: 1px solid var(--accent);
+				border-bottom: 1px solid var(--accent);
+				justify-content: center;
+				font-size: 25px;
+				background-color: var(--collor-box);
+				color: #000;
+				font-weight: 700;
+			}
+			.team{
+				display: flex;
+				flex-wrap: wrap;
+				min-height: fit-content;
+                max-width: 100%;			
+				flex-direction: row;
+			}
+			.team-element{
+				flex: 0 0 25%;
+				max-width: 25%;
+				min-width: 25%;
+				display: flex;
+				flex-direction: column;
+			}
+			.teame-content{
+		  	    flex: 0 0 50%;
+				max-width: 50%;
+				min-width: 50%;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				padding: 20px;
+				justify-content: center;
+			}
+			.teame-photo-blok{
+				padding: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img{
+					width: 100%;
+					height: 250px;
+					object-fit: cover;
+					
+				}
+			}
+			.teame-item{
+				position: relative;
+				display: flex;
+				flex-direction: column;
+
+			}
+			.top-team{
+				min-height: 420px;
+				justify-content: end;
+			}
+			.teame-name{
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 18px;
+				display: flex;
+	            transition: opacity 0.3s ease-in-out 0s;
+				opacity: 0;
+				flex-direction: column;
+				gap: 8px;
+				padding: 20px;
+				background: rgba( 0, 0, 0, 0.25 );
+				box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+				backdrop-filter: blur( 4px );
+				-webkit-backdrop-filter: blur( 4px );
+				text-align: center;
+				color: #fff;
+				p{
+					font-size: 15px;
+				}
+				h3{
+					font-size: 18px;
+				}
+				
+			}
+			.teame-item:hover .teame-name{
+				opacity: 1;
+			}
+			.step-work{
+				display: flex;
+				gap: 10px;
+				align-items: center;
+				span{
+					flex: 0 0 auto;
+					width: 40px;
+					height: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: var(--black-color);
+					border: 1px solid var(--accent);
+					border-radius: 50%;
+				}
+			}
+			.team-img{
+				flex: 0 0 50%;
+				max-width: 50%;
+				min-width: 50%;
+				min-height: 250px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: none;
+				border-radius: 20px;
+				border: 2px dashed rgba(170, 149,80);
+			    box-shadow:  0 1px 3px rgba(0, 0, 0, .5);
+				background-image: url(bg/1_bg.jpg);
+			}
+			.privacy-page{
+			word-break: break-word;
+		}
+		.privacy-page p{
+		margin-bottom: 10px;
+		text-indent: 3ch; 
+		
+		}
+		.privacy-page h1{
+		font-weight: 700;
+		text-align: center;
+		margin-bottom:  24px;
+		}
+		.privacy-page h2{
+		font-weight: 600;
+		text-align: center;
+		margin-bottom:15px ;
+		}
+		.privacy-page table,.privacy-page a{
+		word-break: break-word;
+		color: inherit;
+		}
+		.privacy-page li{
+		list-style: inside;
+		}
+
+			.base-btn{
+			display: inline-block;
+			padding: 10px 20px; 
+			width: fit-content;
+			font-size: 16px; 
+			font-weight: bold; 
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer; 
+			outline: none;
+			border-radius: 5px; 
+			transition: background-color 0.3s ease; 
+			}
+			.btn-1 {
+			display: inline-flex;
+			position: relative;
+			align-items: center;    
+			color: #FFF;    
+			text-transform: uppercase;    
+			background: var(--black-color);    
+			border: 2px solid #BFE2FF;
+			overflow: hidden;
+			z-index: 1;
+			}
+			.btn-1:hover,
+			.btn-1:active,
+			.btn-1:focus {
+			color: #FFF;
+			}
+			.btn-1:before,
+			.btn-1:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 20px;
+			height: 100%;
+			background-color: #bb5502;
+			z-index: -1;
+			}
+			.btn-1:before {
+			left: -20px;
+			transform: translate(-50%, -50%);
+			}
+			.btn-1:after {
+			right: -20px;
+			transform: translate(50%, -50%);
+			}
+			.btn-1:hover:before,
+			.btn-1:active:before,
+			.btn-1:focus:before {
+			animation: from-left 0.5s both;
+			}
+			.btn-1:hover:after,
+			.btn-1:active:after,
+			.btn-1:focus:after {
+			animation: from-right 0.5s both;
+			}
+			@keyframes from-right {
+				0% {
+					right: -20px;
+				}
+				50% {
+					right: 50%;
+					width: 20px;
+				}
+				100% {
+					right: 50%;
+					width: 100%;
+				}
+			}
+			@keyframes from-left {
+				0% {
+					left: -20px;
+				}
+				50% {
+					left: 50%;
+					width: 20px;
+				}
+				100% {
+					left: 50%;
+					width: 100%;
+				}
+			}
+
+						
+
+			.btn-2 {
+			cursor: pointer;
+			padding: 15px 30px;
+			border-radius: 10px;
+
+			border-style: double;
+			font-weight: 600;
+			background-image: linear-gradient(
+				rgb(54, 53, 53),
+				rgb(0, 0, 0),
+				rgb(54, 54, 54)
+			);
+			color: rgb(164, 164, 162);			
+			border-color: rgb(0, 0, 0);
+			transition: 400ms;
+			}
+
+			.btn-2:hover {
+			transition: 400ms;
+			border-style: double;
+			border-color: rgb(208, 207, 207);
+			color: rgb(219, 216, 216);
+			font-size: 16px;
+			text-shadow: 1px 10px 5px rgb(61, 61, 61);
+			}
+			.btn-3 {
+			
+			position: relative;
+			padding: 15px 20px;
+			border: 3px ridge var(--accent);
+			outline: none;
+			background-color: transparent;
+			color: white;
+			transition: 1s;
+			border-radius: 0.3em;
+			font-size: 16px;
+			font-weight: bold;
+			}
+
+			.btn-3::after {
+			content: "";
+			position: absolute;
+			top: -10px;
+			left: 3%;
+			width: 95%;
+			height: 40%;
+			background-color: inherit;
+			transition: 0.5s;
+			transform-origin: center;
+			}
+
+				.btn-3::before {
+				content: "";
+				transform-origin: center;
+				position: absolute;
+				top: 80%;
+				left: 3%;
+				width: 95%;
+				height: 40%;
+				background-color: inherit;
+				transition: 0.5s;
+				}
+
+				.btn-3:hover::before, .btn-3:hover::after {
+				transform: scale(0)
+				}
+
+				.btn-3:hover {
+				box-shadow: inset 0px 0px 25px #ea9414;
+				}		
+
+		
+			.btn-4 {
+			position: relative;
+			margin: 0;
+			width: fit-content;
+			text-align: center;
+			padding:15px 20px;
+			outline: none;
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			border: 1px solid var(--white-section);
+			text-transform: uppercase;
+			background-color: #333;
+			border-radius: 5px;
+			color: #fff;
+			font-weight: 300;
+			font-size: 15px;
+			font-family: inherit;
+			z-index: 0;
+			overflow: hidden;
+			transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+			}
+
+			.btn-4:hover {
+			animation: sh0 0.5s ease-in-out both;
+			}
+
+			@keyframes sh0 {
+			0% {
+				transform: rotate(0deg) translate3d(0, 0, 0);
+			}
+
+			25% {
+				transform: rotate(7deg) translate3d(0, 0, 0);
+			}
+
+			50% {
+				transform: rotate(-7deg) translate3d(0, 0, 0);
+			}
+
+			75% {
+				transform: rotate(1deg) translate3d(0, 0, 0);
+			}
+
+			100% {
+				transform: rotate(0deg) translate3d(0, 0, 0);
+			}
+			}
+
+			.btn-4:hover span {
+			animation: storm 0.7s ease-in-out both;
+			animation-delay: 0.06s;
+			}
+
+			.btn-4::before,
+			.btn-4::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: #fff;
+			opacity: 0;
+			transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+			z-index: -1;
+			transform: translate(100%, -25%) translate3d(0, 0, 0);
+			}
+
+			.btn-4:hover::before,
+			.btn-4:hover::after {
+			opacity: 0.15;
+			transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+			}
+
+			.btn-4:hover::before {
+			transform: translate3d(50%, 0, 0) scale(0.9);
+			}
+
+			.btn-4:hover::after {
+			transform: translate(50%, 0) scale(1.1);
+			}
+			.btn-5 {
+			text-decoration: none;
+			display: inline-block; 
+			padding: 10px 20px;
+			position: relative;
+			border-radius: 0;
+			border: 2px solid #fff;
+			color: #fff; 
+			transition: .4s;
+			background-color: #FF0000;
+			}
+			.btn-5:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			border: 2px solid rgba(0, 0, 0, 0);
+			transition: .4s;
+			}
+			.btn-5:hover:after {
+			border-color: #fff;
+			width: calc(100% - 10px);
+			height: calc(100% + 10px);
+			}
+			.btn-5:hover,.btn-5:focus{
+			color: #fff;
+			}
+
+			.tarif-blok .border:hover{
+                border-color: #fff;
+			}
+
+
+			
+         
+
+			@media screen and (max-width: 480px) {
+				.pad-20{
+					padding: 20px 0;
+				}
+			}
+			@media screen and (min-width: 575px){
+				
+			}
+			@media (max-width: 575px){				
+				.servis-item,.servis-item:last-child{
+                   flex-direction: column;
+				}
+				.title-top {
+					font-size: 19px;
+				}
+				.step-work{
+					flex-direction: column;
+					text-align: center;
+				}
+				.footer-wrapper,.footer-copyright, .footer-link-list{
+					justify-content: center;
+				}
+				
+				
+			}
+			
+			@media screen and (min-width: 768px) {
+							
+			}
+			@media (max-width: 768px) and (min-width: 575px){
+				
+			}
+			@media (max-width: 768px){	
+			  .about-blok,.form-wrapper {
+				flex-direction: column-reverse;
+			  }
+			  .main-picture{
+				float: none;
+				width:100%;
+				margin: 0 0 20px 0;  
+					
+				}
+				.main-box .border{
+					border: none;
+				} 
+				.servis-group {
+					flex-direction: column;
+				}
+				.lain{
+					    border-left: 0px solid var(--accent);
+					    border-bottom: 2px solid var(--accent);
+				}
+               
+			}
+			@media (max-width: 992px) and (min-width: 768px){
+                .team-element{					
+					flex-direction: row;					
+				}
+				
+			}
+			 @media screen and (min-width: 992px) {
+				.worker-title{
+					display: none;
+				}
+			}
+			@media (max-width: 992px){
+				.tarif-blok{
+					flex-direction: column;
+				}
+				.team {
+					flex-direction: column-reverse;
+				}
+				.team-element{
+                 gap: 30px;
+				 justify-content: space-evenly;
+				}
+				.teame-content,.team-element,.team-img{
+					flex: auto;
+					max-width: 100%;
+					min-width: 100%;
+				}
+				.teame-item:hover .border{
+					border-color: #fff;
+				}
+				
+				.top-team {
+					 min-height: auto;
+				}
+				.teame-name{
+					position: unset;
+					opacity: 1;
+				}
+				.teame-item {
+					flex: 1;
+				}
+				
+			}
+			@media (max-width: 992px) and (min-width: 768px){
+				
+				
+			}
+
+			@media (max-width: 992px) and (min-width: 575px){
+			  
+			
+			}
+
+			@media screen and (min-width: 992px){
+				.main-container{
+					max-width: 960px;
+				}
+				.top-box::before,.top-box::after{
+					border-top: 10px solid #0a1b16eb;
+				}
+			}			  
+			         
+			         
+		</style>		
+		
+		
+	</head>
+
+	<body>
+
+<div class="bg-box">	
+
+<header class="pad-section">
+	<section class="main-container">
+		<div class="header-top-box border">
+         <div class="slides" style="direction: ltr">
+			<div class="slide">
+				<img src="gallery/0-gallery.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="gallery/1-gallery.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="gallery/2-gallery.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="gallery/3-gallery.jpg" alt="">
+			</div>
+		 </div>
+         <div class="logo-section">
+			<div class="top-box border">
+				<div class="CkYK5s"></div>
+			    <div class="n25I44"></div> 
+				<div class="logo-box border">
+					<a href="./" class="logo-link">
+                      <img  src="logotip.png" alt=" " />
+					</a>					
+				</div>
+				<a class="title-top" href="./">Вершина</a>
+			</div>
+		  </div>		   
+		</div>
+	</section>
+</header>
+ 
+
+<section class="pad-section">
+    <div class="main-container color-bg"> 
+        <div class="pad-20 flex-box-colum">
+            <h2 class="title-box">Умови надання послуг</h2>
+            <div class="privacy-page">
+            <h3>ЗГОДА З НАШИМИ ЮРИДИЧНИМИ УМОВАМИ</h3>
+
+<p>Ми є <span class="domaintextname-u25EvMPV"></span> ("Компанія", "ми", "нас" або "наші") .</p>
+
+<p>Ми керуємо веб-сайтом ("Сайт"), а також будь-якими <span class="domaintextname-u25EvMPV"></span> іншими пов'язаними продуктами та послугами, які посилаються на ці юридичні умови або посилаються на них ("Юридичні умови") (разом "Послуги").</p>
+
+<p>__________</p>
+
+<p>Ви можете зв'язатися з нами електронною поштою за адресою info@vershyna-site.com.ua або поштою за адресою м. Київ, вул. Велика Васильківська, 14</p>
+
+<p>Ці Юридичні умови становлять юридично обов'язкову угоду, укладену між вами особисто або від імені юридичної особи («ви»), а також <span class="domaintextname-u25EvMPV"></span>щодо вашого доступу до Служб і їх використання. Ви погоджуєтеся, що, отримуючи доступ до Послуг, ви прочитали, зрозуміли та погодилися дотримуватися всіх цих Юридичних умов. ЯКЩО ВИ НЕ ЗГОДНІ З УСІМА ЦИМИ ЮРИДИЧНИМИ УМОВАМИ, ВАМ КАТЕГОРИЧНО ЗАБОРОНЕНО КОРИСТУВАТИСЯ СЛУЖБАМИ, І ВИ ПОВИННІ НЕГАЙНО ПРИПИНИТИ ВИКОРИСТАННЯ.</p>
+
+<p>Ми повідомимо вас про будь-які заплановані зміни в Послугах, якими ви користуєтеся. Змінені Юридичні умови набувають чинності після публікації або повідомлення вас info@vershyna-site.com.ua, як зазначено в електронному повідомленні. Продовжуючи користуватися Послугами після дати набрання чинності будь-якими змінами, ви погоджуєтеся дотримуватися змінених умов.</p>
+
+<p>Радимо роздрукувати копію цих Юридичних умов для своїх записів.</p>
+
+<h3>ЗМІСТ</h3>
+
+<div style="display: flex; flex-direction: column; gap: 5px;">
+    <a href="#services">1. НАШІ ПОСЛУГИ</a>
+    <a href="#ip">2. ПРАВА ІНТЕЛЕКТУАЛЬНОЇ ВЛАСНОСТІ</a>
+    <a href="#userreps">3. ПРЕДСТАВЛЕННЯ КОРИСТУВАЧА</a>
+    <a href="#userreg">4. РЕЄСТРАЦІЯ КОРИСТУВАЧА</a>
+    <a href="#products">5. ПРОДУКЦІЯ</a>
+    <a href="#purchases">6. ПОКУПКИ ТА ОПЛАТА</a>
+    <a href="#returnyes">7. ПОЛІТИКА ПОВЕРНЕННЯ/ПОВЕРНЕННЯ КОШТІВ</a>
+    <a href="#software">8. ПРОГРАМНЕ ЗАБЕЗПЕЧЕННЯ</a>
+    <a href="#prohibited">9. ЗАБОРОНЕНІ ВИДИ ДІЯЛЬНОСТІ</a>
+    <a href="#ugc">10. ВНЕСКИ, СТВОРЕНІ КОРИСТУВАЧАМИ</a>
+    <a href="#license">11. ЛІЦЕНЗІЯ ВНЕСКУ</a>
+    <a href="#reviews">12. РЕКОМЕНДАЦІЇ ЩОДО ВІДГУКІВ</a>
+    <a href="#socialmedia">13. СОЦІАЛЬНІ МЕРЕЖІ</a>
+    <a href="#thirdparty">14. СТОРОННІ ВЕБ-САЙТИ ТА ВМІСТ</a>
+    <a href="#sitemanage">15. УПРАВЛІННЯ ПОСЛУГАМИ</a>
+    <a href="#ppyes">16. ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a>
+    <a href="#dmca">17. ПОВІДОМЛЕННЯ ТА ПОЛІТИКА ЗАКОНУ ПРО ЗАХИСТ АВТОРСЬКИХ ПРАВ У ЦИФРОВУ ЕПОХУ (DMCA)</a>
+    <a href="#terms">18. ТЕРМІН ДІЇ ТА ПРИПИНЕННЯ ДІЇ</a>
+    <a href="#modifications">19. МОДИФІКАЦІЇ ТА ПЕРЕРИВАННЯ</a>
+    <a href="#law">20. ЗАСТОСОВНЕ ЗАКОНОДАВСТВО</a>
+    <a href="#disputes">21. ВИРІШЕННЯ СПОРІВ</a>
+    <a href="#corrections">22. ВИПРАВЛЕННЯ</a>
+    <a href="#disclaimer">23. ВІДМОВА ВІД ВІДПОВІДАЛЬНОСТІ</a>
+    <a href="#liability">24. ОБМЕЖЕННЯ ВІДПОВІДАЛЬНОСТІ</a>
+    <a href="#indemnification">25. ВІДШКОДУВАННЯ</a>
+    <a href="#userdata">26. ДАНІ КОРИСТУВАЧА</a>
+    <a href="#electronic">27. ЕЛЕКТРОННІ КОМУНІКАЦІЇ, ТРАНЗАКЦІЇ ТА ПІДПИСИ</a>
+    <a href="#california">28. КОРИСТУВАЧІ ТА ЖИТЕЛІ КАЛІФОРНІЇ</a>
+    <a href="#misc">29. РІЗНЕ</a>
+    <a href="#contact">30. ЗВ'ЯЖІТЬСЯ З НАМИ</a>
+</div>
+<br>
+
+<h3 id="services">1. НАШІ ПОСЛУГИ</h3>
+
+<p>Інформація, надана під час використання Послуг, не призначена для розповсюдження або використання будь-якою фізичною або юридичною особою в будь-якій юрисдикції або країні, де таке розповсюдження або використання суперечить закону чи нормативним актам або які підлягають будь-яким вимогам щодо реєстрації в такій юрисдикції чи країні. Відповідно, ті особи, які вирішили отримати доступ до Послуг з інших місць, роблять це за власною ініціативою та несуть повну відповідальність за дотримання місцевого законодавства, якщо та в тій мірі, в якій застосовується місцеве законодавство.</p>
+
+<p>Служби не пристосовані до галузевих норм (Закон про звітність і безпеку медичного страхування (HIPAA), Федеральний закон про керування інформаційною безпекою (FISMA) тощо), тому якщо ваша взаємодія підпадає під дію таких законів, ви не маєте права користуватися Службами. Ви не можете використовувати Послуги у спосіб, який порушує Закон Грамма-Ліча-Блайлі (GLBA).</p>
+
+<h3 id="ip">2. ПРАВА ІНТЕЛЕКТУАЛЬНОЇ ВЛАСНОСТІ</h3>
+
+<p>Наша інтелектуальна власність</p>
+
+<p>Ми є власником або ліцензіатом усіх прав інтелектуальної власності на наші Послуги, включно з усім вихідним кодом, базами даних, функціональними можливостями, програмним забезпеченням, дизайном веб-сайтів, аудіо, відео, текстом, фотографіями та графікою в Службах (разом – «Вміст»), а також товарними знаками, знаками обслуговування та логотипами, що містяться в них («Знаки»).</p>
+
+<p>Наш Контент і Товарні знаки захищені законами про авторське право і товарні знаки (а також різними іншими правами інтелектуальної власності і законами про недобросовісну конкуренцію) і договорами в Сполучених Штатах і в усьому світі.</p>
+
+<p>Контент і Знаки надаються в Службах «ЯК Є» або за їх допомогою лише для особистого, некомерційного використання або внутрішніх ділових цілей.</p>
+
+<p>Ваше використання наших Послуг</p>
+
+<p>За умови дотримання вами цих Юридичних умов, включно з розділом «ЗАБОРОНЕНІ ДІЇ» нижче, ми надаємо вам невиключну ліцензію, яка не підлягає передачі та відкликанню:
+отримувати доступ до Послуг; і
+завантажувати або друкувати копію будь-якої частини Вмісту, до якої ви належним чином отримали доступ.
+виключно для особистого, некомерційного використання або внутрішньої ділової мети.</p>
+
+<p>За винятком випадків, зазначених у цьому розділі або інших місцях наших Юридичних умов, жодна частина Служб і жоден Вміст або Знаки не можуть бути скопійовані, відтворені, об'єднані, повторно опубліковані, завантажені, розміщені, публічно показані, закодовані, перекладені, передані, розповсюджені, продані, ліцензовані або іншим чином використані в будь-яких комерційних цілях без нашого попереднього письмового дозволу.</p>
+
+<p>Якщо ви бажаєте будь-яким чином використовувати Послуги, Контент або Знаки, крім випадків, зазначених у цьому розділі або в інших місцях наших Юридичних умов, надішліть свій запит на адресу: info@vershyna-site.com.ua. Якщо ми коли-небудь надамо вам дозвіл публікувати, відтворювати або публічно демонструвати будь-яку частину наших Послуг або Вмісту, ви повинні ідентифікувати нас як власників або ліцензіарів Служб, Вмісту або Товарних знаків і переконатися, що будь-яке повідомлення про авторське право або власність з'являється або відображається під час розміщення, відтворення або відображення нашого Вмісту.</p>
+
+<p>Ми залишаємо за собою всі права, прямо не надані вам на Послуги, Контент і Знаки.</p>
+
+<p>Будь-яке порушення цих Прав інтелектуальної власності становитиме істотне порушення наших Юридичних умов, і ваше право на використання наших Послуг буде негайно припинено.</p>
+
+<p>Ваші подання та внески</p>
+
+<p>Уважно ознайомтеся з цим розділом і розділом "ЗАБОРОНЕНІ ДІЇ", перш ніж користуватися нашими Сервісами, щоб зрозуміти (а) права, які ви надаєте нам, і (б) обов'язки, які ви маєте під час публікації або завантаження будь-якого вмісту через Служби.</p>
+
+<p>Подання: Безпосередньо надсилаючи нам будь-яке запитання, коментар, пропозицію, ідею, відгук або іншу інформацію про Послуги («Подання»), ви погоджуєтеся передати нам усі права інтелектуальної власності на таке Подання. Ви погоджуєтеся, що ми будемо володіти цим Поданням і матимемо право на його необмежене використання та розповсюдження для будь-яких законних цілей, комерційних чи інших, без підтвердження чи компенсації вам.</p>
+
+<p>Внески: Послуги можуть запрошувати вас спілкуватися, робити внесок або брати участь у блогах, дошках оголошень, онлайн-форумах та інших функціях, під час яких ви можете створювати, надсилати, публікувати, відображати, передавати, публікувати, розповсюджувати або транслювати вміст і матеріали нам або через Послуги, включаючи, але не обмежуючись текстом, творами, відео, аудіо, фотографіями, музикою, графікою, коментарями,  відгуки, пропозиції щодо оцінювання, особиста інформація чи інші матеріали ("Внески"). Будь-яке Подання, яке публікується публічно, також розглядається як Внесок.</p>
+
+<p>Ви розумієте, що матеріали можуть бути доступні для перегляду іншими користувачами Послуг і, можливо, через сторонні веб-сайти.</p>
+
+<p>Коли ви публікуєте матеріали, ви надаєте нам ліцензію (включаючи використання вашого імені, торгових марок та логотипів): Розміщуючи будь-які матеріали, ви надаєте нам необмежене, необмежене, безвідкличне, безстрокове, невиключне, передаване, безоплатне, повністю оплачене, всесвітнє право та ліцензію на: використання, копіювання, відтворення, розповсюдження, продаж, перепродаж, публікацію, трансляцію, перейменування, зберігання, публічне виконання, публічний показ, переформатування, переклад, уривок (повністю або частково),  а також використовувати ваші матеріали (включаючи, але не обмежуючись, ваше зображення, ім'я та голос) для будь-яких цілей, комерційних, рекламних чи інших, для підготовки похідних робіт або включення до інших робіт ваших матеріалів, а також для субліцензування ліцензій, наданих у цьому розділі. Наше використання та розповсюдження може відбуватися в будь-яких медіаформатах та через будь-які медіаканали.</p>
+
+<p>Ця ліцензія включає використання нами вашого імені, назви компанії та назви франшизи, залежно від обставин, а також будь-яких торгових марок, знаків обслуговування, торгових найменувань, логотипів, особистих та комерційних зображень, які ви надаєте.</p>
+
+<p>Ви несете відповідальність за те, що публікуєте або завантажуєте: надсилаючи нам подання та/або публікуючи матеріали через будь-яку частину Послуг або роблячи внески доступними через Послуги, пов'язуючи свій обліковий запис через Послуги з будь-яким із ваших облікових записів соціальних мереж, ви:
+підтвердити, що ви прочитали та погоджуєтеся з нашою «ЗАБОРОНЕНОЮ ДІЯЛЬНІСТЮ» і не будете публікувати, надсилати, публікувати, завантажувати або передавати через Послуги будь-яке Подання, а також публікувати будь-який Вміст, який є незаконним, докучливим, ненависним, шкідливим, наклепницьким, непристойним, залякуючим, образливим, дискримінаційним, загрозливим для будь-якої особи чи групи, сексуально відвертим, неправдивим, неточним, оманливим або таким, що вводить в оману;
+в межах, дозволених чинним законодавством, відмовитися від будь-яких і всіх моральних прав на будь-яке таке Подання та/або Внесок;
+гарантуєте, що будь-яке таке Подання та/або Внески є оригінальними для вас або що у вас є необхідні права та ліцензії для подання таких Подань та/або Внесків, і що ви маєте повні повноваження надавати нам вищезазначені права щодо ваших Подань та/або Внесків; і
+гарантувати та заявляти, що ваші подання та/або матеріали не є конфіденційною інформацією.
+Ви несете повну відповідальність за свої Подання та/або Матеріали, і ви прямо погоджуєтеся відшкодувати нам будь-які збитки, які ми можемо понести через порушення вами (а) цього розділу, (б) прав інтелектуальної власності будь-якої третьої сторони або (в) чинного законодавства.</p>
+
+<p>Ми можемо видаляти або редагувати ваш вміст: Хоча ми не зобов'язані відстежувати будь-які матеріали, ми матимемо право видаляти або редагувати будь-які матеріали в будь-який час без попередження, якщо, на нашу обґрунтовану думку, ми вважаємо такі матеріали шкідливими або такими, що порушують ці юридичні умови. Якщо ми видалимо або відредагуємо будь-які такі матеріали, ми також можемо призупинити або вимкнути ваш обліковий запис і повідомити про вас владі.</p>
+
+<p>Порушення авторських прав</p>
+
+<p>Ми поважаємо права інтелектуальної власності інших осіб. Якщо ви вважаєте, що будь-який матеріал, доступний у Службах або через них, порушує будь-які авторські права, якими ви володієте або контролюєте, негайно перегляньте розділ "ПОВІДОМЛЕННЯ ТА ПОЛІТИКА ЩОДО ЗАКОНУ ПРО ЗАХИСТ АВТОРСЬКИХ ПРАВ У ЦИФРОВУ ЕПОХУ (DMCA)" нижче.</p>
+
+<h3 id="userreps">3. ПРЕДСТАВНИЦТВА КОРИСТУВАЧІВ</h3>
+
+<p>Користуючись Послугами, ви заявляєте та гарантуєте, що: (1) вся надана вами реєстраційна інформація буде правдивою, точною, актуальною та повною; (2) ви будете підтримувати точність такої інформації та своєчасно оновлювати таку реєстраційну інформацію, якщо це необхідно; (3) ви маєте правоздатність і погоджуєтеся дотримуватися цих Юридичних умов; (4) ви не є неповнолітньою особою в юрисдикції, в якій проживаєте; (5) ви не матимете доступу до Послуг за допомогою автоматизованих або нелюдських засобів, будь то бот, скрипт чи іншим чином; (6) ви не будете використовувати Послуги для будь-яких незаконних або несанкціонованих цілей; та (7) використання вами Послуг не порушуватиме жодного чинного законодавства чи нормативних актів.</p>
+
+<p>Якщо ви надасте будь-яку інформацію, яка є неправдивою, неточною, актуальною або неповною, ми маємо право призупинити або припинити дію вашого облікового запису та відмовити в будь-якому поточному або майбутньому використанні Послуг (або будь-якої їх частини).</p>
+
+<h3 id="userreg">4. РЕЄСТРАЦІЯ КОРИСТУВАЧА</h3>
+
+<p>Для використання Служб вам може знадобитися зареєструватися. Ви погоджуєтеся зберігати свій пароль у таємниці та несете відповідальність за будь-яке використання свого облікового запису та пароля. Ми залишаємо за собою право видалити, відновити або змінити вибране вами ім'я користувача, якщо ми визначимо, на власний розсуд, що таке ім'я користувача є недоречним, непристойним або іншим чином неприйнятним.</p>
+
+<h3 id="products">5. ПРОДУКЦІЯ</h3>
+
+<p>Ми докладаємо всіх зусиль, щоб якомога точніше відображати кольори, особливості, характеристики та деталі продуктів, доступних у Послугах. Однак ми не гарантуємо, що кольори, особливості, технічні характеристики та деталі продуктів будуть точними, повними, надійними, актуальними або без інших помилок, а ваш електронний дисплей може неточно відображати фактичні кольори та деталі продуктів. Вся продукція залежить від наявності, і ми не можемо гарантувати, що товари будуть на складі. Ми залишаємо за собою право припинити випуск будь-якої продукції в будь-який час і з будь-якої причини. Ціни на всю продукцію можуть змінюватися.</p>
+
+<h3 id="purchases">6. ПОКУПКИ ТА ОПЛАТА</h3>
+
+<p>Ми приймаємо наступні форми оплати:</p>
+<ul>
+    <li>Віза</li>
+    <li>Mastercard</li>
+    <li>Американський експрес</li>
+    <li>PayPal</li>
+</ul>
+
+<p>Ви погоджуєтеся надавати актуальну, повну й точну інформацію про покупки та обліковий запис для всіх покупок, зроблених за допомогою Служб. Ви також погоджуєтеся своєчасно оновлювати інформацію про обліковий запис і платіжну інформацію, включаючи адресу електронної пошти, спосіб оплати та термін дії платіжної картки, щоб ми могли завершити ваші транзакції та зв'язатися з вами за потреби. Податок з продажів буде додано до ціни покупок, як ми вважаємо за потрібне. Ми можемо змінити ціни в будь-який час.</p>
+
+<p>Ви погоджуєтеся сплачувати всі збори за цінами, що діють на той час для ваших покупок та будь-яких застосовних зборів за доставку, і ви дозволяєте нам стягувати з вибраного вами постачальника платежів будь-які такі суми під час розміщення вашого замовлення. Ми залишаємо за собою право виправляти будь-які помилки в ціноутворенні, навіть якщо ми вже запросили або отримали оплату.</p>
+
+<p>Ми залишаємо за собою право відмовити в будь-якому замовленні, оформленому за допомогою Послуг. Ми можемо, на власний розсуд, обмежити або скасувати кількість, придбану на людину, домогосподарство або на замовлення. Ці обмеження можуть включати замовлення, розміщені в одному обліковому записі клієнта або за його межами, той самий спосіб оплати та/або замовлення, у яких використовується та сама адреса для виставлення рахунків або доставки. Ми залишаємо за собою право обмежувати або забороняти замовлення, які, на нашу думку, розміщуються дилерами, торговельними посередниками або дистриб'юторами.</p>
+
+<h3 id="returnyes">7. ПОЛІТИКА ПОВЕРНЕННЯ/ПОВЕРНЕННЯ</h3>
+
+<p>Будь ласка, ознайомтеся з нашою Політикою повернення, опублікованою в Послугах, перш ніж робити будь-які покупки.</p>
+
+<h3 id="software">8. ПРОГРАМНЕ ЗАБЕЗПЕЧЕННЯ</h3>
+
+<p>Ми можемо включати програмне забезпечення для використання у зв'язку з нашими Службами. Якщо таке програмне забезпечення супроводжується ліцензійною угодою з кінцевим користувачем («EULA»), використання програмного забезпечення регулюватиметься умовами ліцензійної угоди. Якщо таке програмне забезпечення не супроводжується ліцензійною угодою, ми надаємо вам невиключну, відкличну, особисту ліцензію, яка не підлягає передачі, на використання такого програмного забезпечення виключно у зв'язку з нашими службами та відповідно до цих Юридичних умов. Будь-яке програмне забезпечення та будь-яка пов'язана з ним документація надається «ЯК Є» без будь-яких гарантій, явних або непрямих, включаючи, але не обмежуючись, непрямі гарантії товарного стану, придатності для певної мети або непорушення прав інтелектуальної власності. Ви приймаєте на себе всі ризики, пов'язані з використанням або продуктивністю будь-якого програмного забезпечення. Ви не маєте права відтворювати або розповсюджувати будь-яке програмне забезпечення, окрім випадків, передбачених ліцензійною угодою або цими Юридичними умовами.</p>
+
+<h3 id="prohibited">9. ЗАБОРОНЕНА ДІЯЛЬНІСТЬ</h3>
+
+<p>Ви не маєте права отримувати доступ до Служб або використовувати їх для будь-яких інших цілей, окрім тих, для яких ми надаємо доступ до Служб. Послуги не можуть використовуватися у зв'язку з будь-якими комерційними починаннями, за винятком тих, які спеціально схвалені або схвалені нами.</p>
+
+<p>Як користувач Послуг, ви погоджуєтеся:</p>
+<ul>
+    <li>систематично отримувати дані або інший вміст із Служб для створення або компіляції, прямо чи опосередковано, колекції, компіляції, бази даних або каталогів без письмового дозволу від нас.</li>
+    <li>Обманювати, обманювати або вводити в оману нас та інших користувачів, особливо в будь-яких спробах дізнатися конфіденційну інформацію облікового запису, як-от паролі користувачів.</li>
+    <li>Обходити, вимикати або іншим чином втручатися в роботу функцій безпеки Служб, зокрема перешкоджати використанню чи копіюванню чи копіюванню будь-якого Вмісту або застосовувати обмеження на використання Служб і/або Вмісту, що в них містяться;</li>
+    <li>Принижувати, паплюжити або іншим чином завдавати шкоди, на нашу думку, нам та/або Послугам.</li>
+    <li>використовувати будь-яку інформацію, отриману зі Служб, з метою переслідування, образи або заподіяння шкоди іншій особі;</li>
+    <li>неналежним чином користуватися нашими службами підтримки або надсилати неправдиві повідомлення про порушення чи неправомірну поведінку;</li>
+    <li>використовувати Служби у спосіб, несумісний із чинними законами або нормативними актами.</li>
+    <li>Брати участь у несанкціонованому фреймінгу Служб або посиланні на них;</li>
+    <li>Завантажувати або передавати (або намагатися завантажити чи передати) віруси, троянських програм або інші матеріали, зокрема надмірне використання великих літер і спам (безперервне розміщення повторюваного тексту), який перешкоджає безперебійному використанню та користуванню Службами будь-якою стороною або змінює, погіршує, порушує, змінює або перешкоджає використанню, функціям, функціонуванню або обслуговуванню Служб;</li>
+    <li>Брати участь у будь-якому автоматизованому використанні системи, наприклад, використовувати сценарії для надсилання коментарів чи повідомлень або використовувати будь-який інтелектуальний аналіз даних, роботів або подібні інструменти збору та вилучення даних.</li>
+    <li>Видалити повідомлення про авторські права або інші права власності з будь-якого Вмісту.</li>
+    <li>намагатися видати себе за іншого користувача чи особу або використовувати ім'я іншого користувача;</li>
+    <li>Завантажувати або передавати (або намагатися завантажити або передати) будь-який матеріал, який діє як пасивний або активний механізм збору або передачі інформації, включаючи, але не обмежуючись, чіткі формати обміну графікою ("GIF-файли"), 1×1 пікселя, веб-жучки, файли cookie або інші подібні пристрої (іноді їх називають "шпигунським програмним забезпеченням", "пасивними механізмами збору" або "pcms").</li>
+    <li>втручатися, порушувати роботу або створювати надмірне навантаження на Служби, мережі чи служби, підключені до них;</li>
+    <li>Турбувати, дратувати, залякувати або погрожувати будь-якому з наших співробітників або агентів, які надають вам будь-яку частину Послуг;</li>
+    <li>намагатися обійти будь-які заходи Служб, спрямовані на запобігання або обмеження доступу до Служб або будь-якої їх частини;</li>
+    <li>копіювати або адаптувати програмне забезпечення Служб, зокрема Flash, PHP, HTML, JavaScript або інший код;</li>
+    <li>За винятком випадків, дозволених чинним законодавством, розшифровувати, декомпілювати, дизасемблювати або здійснювати зворотне проектування будь-якого програмного забезпечення, яке містить або будь-яким чином входить до складу Служб.</li>
+    <li>За винятком випадків, коли це може бути результатом стандартного використання пошукової системи або Інтернет-браузера, використання, запуску, розробки або розповсюдження будь-якої автоматизованої системи, включно з, але не обмежуючись, будь-якими павуками, роботами, утилітами для обману, скребком або автономним зчитувачем, які здійснюють доступ до Служб, а також використанням або запуском будь-якого несанкціонованого сценарію чи іншого програмного забезпечення.</li>
+    <li>Використовувати агента із закупівель або агента із закупівель для здійснення покупок у Службах.</li>
+    <li>здійснювати будь-яке несанкціоноване використання Послуг, зокрема збирати імена користувачів та/або адреси електронної пошти користувачів електронними або іншими засобами з метою надсилання небажаної електронної пошти або створення облікових записів користувачів автоматизованими засобами чи під неправдивими приводами;</li>
+    <li>використовувати Служби в рамках будь-яких зусиль, щоб конкурувати з нами, або іншим чином використовувати Послуги та/або Вміст для будь-яких прибуткових або комерційних підприємств;</li>
+    <li>Використовувати Послуги для реклами або пропонування продажу товарів і послуг.</li>
+</ul>
+
+<h3 id="ugc">10. ВНЕСКИ, СТВОРЕНІ КОРИСТУВАЧАМИ</h3>
+
+<p>Служби можуть запрошувати вас спілкуватися в чаті, брати участь у блогах, дошках оголошень, онлайн-форумах та інших функціях, а також можуть надавати вам можливість створювати, надсилати, публікувати, відображати, передавати, виконувати, публікувати, розповсюджувати або транслювати вміст і матеріали нам або в Службах, включаючи, але не обмежуючись текстом, творами, відео, аудіо,  фотографії, графіка, коментарі, пропозиції або особиста інформація чи інші матеріали (разом "Внески"). Матеріали можуть бути доступні для перегляду іншими користувачами Послуг та через сторонні веб-сайти. Таким чином, будь-які матеріали, які ви передаєте, можуть розглядатися як неконфіденційні та немайнові. Коли ви створюєте або робите доступними будь-які матеріали, ви тим самим заявляєте та гарантуєте, що:</p>
+<ul>
+    <li>Створення, розповсюдження, передача, публічний показ або виконання, а також доступ, завантаження або копіювання ваших матеріалів не порушують і не будуть порушувати права власності, включаючи, але не обмежуючись авторським правом, патентом, товарним знаком, комерційною таємницею або моральними правами будь-якої третьої сторони.</li>
+    <li>Ви є автором і власником або маєте необхідні ліцензії, права, згоди, випуски та дозволи на використання та дозвіл нам, Службам та іншим користувачам Послуг використовувати ваші матеріали будь-яким способом, передбаченим Послугами та цими Юридичними умовами.</li>
+    <li>Ви маєте письмову згоду, звільнення та/або дозвіл кожної ідентифікованої фізичної особи у ваших матеріалах використовувати ім'я або подобу кожної такої ідентифікованої фізичної особи, щоб дозволити включати та використовувати ваші матеріали будь-яким способом, передбаченим Послугами та цими Юридичними умовами.</li>
+    <li>Ваші матеріали не є помилковими, неточними чи оманливими.</li>
+    <li>Ваші матеріали не є небажаною або несанкціонованою рекламою, рекламними матеріалами, фінансовими пірамідами, листами щастя, спамом, масовими розсилками чи іншими формами нав'язування.</li>
+    <li>Ваші матеріали не є непристойними, розпусними, хтивими, брудними, насильницькими, переслідувальними, наклепницькими, наклепницькими чи іншими неприйнятними (як визначено нами).</li>
+    <li>Ваші матеріали нікого не висміюють, не висміюють, не принижують, не залякують і не ображають.</li>
+    <li>Ваші матеріали не використовуються для переслідування чи погроз (у юридичному сенсі цих термінів) будь-якій іншій особі та для пропаганди насильства проти конкретної особи чи класу людей.</li>
+    <li>Ваші матеріали не порушують жодного чинного законодавства, постанови чи правила.</li>
+    <li>Ваші матеріали не порушують права на конфіденційність або публічність будь-якої третьої сторони.</li>
+    <li>Ваші матеріали не порушують жодного чинного законодавства щодо дитячої порнографії або іншим чином не призначені для захисту здоров'я чи благополуччя неповнолітніх.</li>
+    <li>Ваші матеріали не містять жодних образливих коментарів, пов'язаних із расою, національним походженням, статтю, сексуальними уподобаннями чи фізичними вадами.</li>
+    <li>Ваші матеріали іншим чином не порушують і не посилаються на матеріал, який порушує будь-яке положення цих Юридичних умов або будь-яке чинне законодавство чи нормативні акти.</li>
+</ul>
+
+<p>Будь-яке використання Служб з порушенням вищезазначеного порушує ці Юридичні умови та може призвести, серед іншого, до припинення або призупинення ваших прав на використання Служб.</p>
+
+<h3 id="license">11. ЛІЦЕНЗІЯ НА УЧАСТЬ</h3>
+
+<p>Публікуючи свої Матеріали в будь-яку частину Послуг або роблячи Внески доступними для Послуг, пов'язуючи свій обліковий запис із Послуг з будь-яким із ваших облікових записів соціальних мереж, ви автоматично надаєте, заявляєте та гарантуєте, що маєте право надавати нам необмежений, необмежений, безвідкличний, безстроковий, невиключний, передаваний, безоплатний,  повністю оплачене, всесвітнє право та ліцензія на розміщення, використання, копіювання, відтворення, розкриття, продаж, перепродаж, публікацію, трансляцію, перейменування, архівування, зберігання, кешування, публічне виконання, публічне відображення, переформатування, переклад, передачу, уривок (повністю або частково) та розповсюдження таких матеріалів (включаючи, але не обмежуючись, ваше зображення та голос) для будь-яких цілей, комерційних, рекламних чи інших, а також для підготовки похідних робіт,  або включати в інші твори, такі Матеріали, а також надавати та дозволяти субліцензії вищезазначеного. Використання і поширення може відбуватися в будь-яких медіаформатах і через будь-які медіаканали.</p>
+
+<p>Ця ліцензія застосовується до будь-якої форми, засобів масової інформації або технологій, відомих зараз або розроблених у майбутньому, і включає використання нами вашого імені, назви компанії та назви франшизи, залежно від обставин, а також будь-яких торгових марок, знаків обслуговування, торгових найменувань, логотипів, особистих та комерційних зображень, які ви надаєте. Ви відмовляєтеся від усіх моральних прав на свої матеріали та гарантуєте, що моральні права не були заявлені у ваших матеріалах.</p>
+
+<p>Ми не претендуємо на жодне право власності на ваші матеріали. Ви зберігаєте за собою повне право власності на всі свої матеріали та будь-які права інтелектуальної власності або інші права власності, пов'язані з вашими внесками. Ми не несемо відповідальності за будь-які заяви або заяви у ваших матеріалах, надані вами в будь-якій області Послуг. Ви несете повну відповідальність за свій внесок у Послуги, і ви прямо погоджуєтеся звільнити нас від будь-якої відповідальності та утримуватися від будь-яких юридичних дій проти нас щодо ваших матеріалів.</p>
+
+<p>Ми маємо право на власний і абсолютний розсуд (1) редагувати, редагувати або іншим чином змінювати будь-які матеріали; (2) змінити категоризацію будь-яких Внесків, щоб розмістити їх у більш відповідних місцях у Послугах; і (3) попередньо перевіряти або видаляти будь-які матеріали в будь-який час і з будь-якої причини, без попередження. Ми не зобов'язані контролювати ваші внески.</p>
+
+<h3 id="reviews">12. НАСТАНОВИ ЩОДО РЕЦЕНЗУВАННЯ</h3>
+
+<p>Ми можемо надавати вам розділи Служб, щоб залишати відгуки або оцінки. Публікуючи відгук, ви повинні відповідати наступним критеріям: (1) ви повинні мати безпосередній досвід роботи з особою/організацією, яку перевіряють; (2) ваші відгуки не повинні містити образливу нецензурну лексику або образливі, расистські, образливі або ненависницькі висловлювання; (3) ваші відгуки не повинні містити дискримінаційних посилань за ознакою релігії, раси, статі, національного походження, віку, сімейного стану, сексуальної орієнтації або інвалідності; (4) ваші відгуки не повинні містити посилань на незаконну діяльність; (5) ви не повинні бути пов'язані з конкурентами, якщо публікуєте негативні відгуки; (6) ви не повинні робити жодних висновків щодо законності поведінки; (7) ви не можете публікувати будь-які неправдиві або оманливі заяви; (8) забороняється організовувати кампанію, яка заохочуватиме інших публікувати відгуки, позитивні чи негативні.</p>
+
+<p>Ми можемо приймати, відхиляти або видаляти відгуки на власний розсуд. Ми абсолютно не зобов'язані перевіряти відгуки або видаляти відгуки, навіть якщо хтось вважає відгуки неприйнятними або неточними. Відгуки не схвалюються нами і не обов'язково відображають нашу думку або погляди будь-якого з наших філій або партнерів. Ми не беремо на себе відповідальність за будь-який відгук або за будь-які претензії, зобов'язання чи збитки, спричинені будь-яким оглядом. Публікуючи відгук, ви надаєте нам безстрокове, невиключне, всесвітнє, безоплатне, повністю оплачене, передаване та субліцензоване право та ліцензію на відтворення, зміну, переклад, передачу будь-якими способами, відображення, виконання та / або розповсюдження всього вмісту, що стосується огляду.</p>
+
+<h3 id="socialmedia">13. СОЦІАЛЬНІ МЕДІА</h3>
+
+<p>У рамках функціональності Послуг ви можете пов'язати свій обліковий запис із онлайн-обліковими записами сторонніх постачальників послуг (кожен такий обліковий запис – «Обліковий запис третьої сторони»), надавши через Послуги дані для входу до облікового запису третьої сторони; або (2) надання нам доступу до вашого облікового запису третьої сторони, як це дозволено відповідними умовами та положеннями, які регулюють використання вами кожного облікового запису третьої сторони. Ви заявляєте та гарантуєте, що маєте право розкривати нам дані для входу в обліковий запис третьої сторони та/або надавати нам доступ до свого облікового запису третьої особи, не порушуючи вами жодних умов використання, які регулюють використання відповідного облікового запису третьої сторони, і не зобов'язуючи нас сплачувати будь-які збори або підлягати будь-яким обмеженням використання, накладеним стороннім постачальником послуг облікового запису третьої сторони. Надаючи нам доступ до будь-яких облікових записів третіх осіб, ви розумієте, що (1) ми можемо отримувати доступ, робити доступним і зберігати (якщо застосовно) будь-який контент, який ви надали і зберегли у своєму обліковому записі третьої сторони («Контент соціальної мережі»), щоб він був доступний у Послугах і через них через ваш обліковий запис, включаючи, але не обмежуючись, будь-які списки друзів і (2) ми можемо надсилати та отримувати від вашого облікового запису третьої сторони додаткову інформацію в тій мірі, в якій ви отримувати сповіщення, коли ви пов'язуєте свій обліковий запис із Обліковим записом третьої сторони. Залежно від вибраних вами облікових записів третіх осіб і відповідно до налаштувань конфіденційності, які ви встановили в таких облікових записах третіх осіб, особиста інформація, яку ви публікуєте у своїх облікових записах третіх осіб, може бути доступна у вашому обліковому записі в Послугах і через нього. Зверніть увагу, що якщо обліковий запис третьої сторони або пов'язана з ним послуга стає недоступною або наш доступ до такого облікового запису третьої сторони припиняється стороннім постачальником послуг, то Контент соціальної мережі може більше не бути доступним у Службах і через них. Ви матимете можливість будь-коли вимкнути зв'язок між вашим обліковим записом у Послугах і вашими обліковими записами третіх осіб. ЗВЕРНІТЬ УВАГУ, ЩО ВАШІ ВІДНОСИНИ ЗІ СТОРОННІМИ ПОСТАЧАЛЬНИКАМИ ПОСЛУГ, ПОВ'ЯЗАНИМИ З ВАШИМИ ОБЛІКОВИМИ ЗАПИСАМИ ТРЕТІХ СТОРІН, РЕГУЛЮЮТЬСЯ ВИКЛЮЧНО ВАШИМИ УГОДАМИ З ТАКИМИ СТОРОННІМИ ПОСТАЧАЛЬНИКАМИ ПОСЛУГ. Ми не докладаємо жодних зусиль для перегляду будь-якого Контенту соціальної мережі для будь-яких цілей, включаючи, але не обмежуючись цим, точність, законність або непорушення прав, і ми не несемо відповідальності за будь-який Контент соціальної мережі. Ви визнаєте та погоджуєтеся з тим, що ми можемо отримати доступ до вашої адресної книги, пов'язаної з обліковим записом третьої сторони, і до вашого списку контактів, що зберігається на вашому мобільному пристрої або планшетному комп'ютері, виключно з метою ідентифікації та інформування вас про тих контактів, які також зареєструвалися для використання Послуг. Ви можете деактивувати з'єднання між Послугами та своїм обліковим записом третьої сторони, зв'язавшись з нами, використовуючи контактну інформацію нижче або через налаштування свого облікового запису (якщо застосовно). Ми намагатимемося видалити будь-яку інформацію, що зберігається на наших серверах, отриману через такий обліковий запис третьої сторони, за винятком імені користувача та зображення профілю, які пов'язані з вашим обліковим записом.</p>
+
+<h3 id="thirdparty">14. СТОРОННІ ВЕБ-САЙТИ ТА ВМІСТ</h3>
+
+<p>Послуги можуть містити (або ви можете бути надіслані через Сайт) посилання на інші веб-сайти («Сторонні веб-сайти»), а також статті, фотографії, текст, графіку, зображення, дизайн, музику, звук, відео, інформацію, програми, програмне забезпечення та інший вміст або елементи, що належать третім особам або походять від них («Контент третіх осіб»). Такі Сторонні веб-сайти та Контент третіх осіб не досліджуються, не контролюються та не перевіряються нами на точність, доречність або повноту, і ми не несемо відповідальності за будь-які веб-сайти третіх сторін, доступ до яких здійснюється через Послуги, або будь-який Контент третіх осіб, розміщений, доступний через Послуги або встановлений із них, включаючи вміст, точність, образливість, думки, надійність, політику конфіденційності або інші політики або містяться на веб-сайтах третіх сторін або третіх сторін Вміст. Включення, посилання або дозвіл на використання або встановлення будь-яких веб-сайтів третіх сторін або будь-якого вмісту третіх сторін не означає їх схвалення або схвалення нами. Якщо ви вирішите залишити Служби та отримати доступ до веб-сайтів третіх сторін або використовувати чи встановити будь-який Вміст третіх осіб, ви робите це на свій страх і ризик, і вам слід знати, що ці Юридичні умови більше не мають сили. Вам слід ознайомитися з відповідними умовами та політиками, зокрема політикою конфіденційності та збирання даних, будь-якого веб-сайту, на який ви переходите зі Служб, або будь-яких програм, які ви використовуєте чи встановлюєте зі Служб. Будь-які покупки, які ви робите через сторонні веб-сайти, будуть здійснюватися через інші веб-сайти та від інших компаній, і ми не несемо жодної відповідальності щодо таких покупок, які здійснюються виключно між вами та відповідною третьою стороною. Ви погоджуєтеся та визнаєте, що ми не схвалюємо продукти чи послуги, пропоновані на веб-сайтах третіх сторін, і ви зобов'язуєтеся вважати нас невинними від будь-якої шкоди, заподіяної придбанням таких продуктів або послуг. Крім того, ви зобов'язуєтеся притягнути нас до відповідальності за будь-які понесені вами збитки або шкоду, заподіяну вам у зв'язку або в результаті будь-якого Стороннього контенту або будь-якого контакту зі сторонніми веб-сайтами.</p>
+
+<h3 id="sitemanage">15. УПРАВЛІННЯ ПОСЛУГАМИ</h3>
+
+<p>Ми залишаємо за собою право, але не зобов'язані: (1) відстежувати Сервіси на предмет порушень цих Юридичних умов; (2) вживати відповідних юридичних заходів проти будь-якої особи, яка на власний розсуд порушує закон або ці Юридичні умови, включаючи, але не обмежуючись, повідомлення про такого користувача правоохоронним органам; (3) на власний розсуд і без обмежень відмовляти, обмежувати доступ, обмежувати доступність або відключати (наскільки це технологічно можливо) будь-який з ваших матеріалів або будь-яку його частину; (4) на власний розсуд і без обмежень, повідомлення або відповідальності видаляти з Послуг або іншим чином вимикати всі файли та вміст, які є надмірними за розміром або будь-яким чином обтяжливими для наших систем; та (5) іншим чином керувати Послугами таким чином, щоб захистити наші права та власність і сприяти належному функціонуванню Послуг.</p>
+
+<h3 id="ppyes">16. ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</h3>
+
+<p>Ми дбаємо про конфіденційність та безпеку даних. Будь ласка, перегляньте нашу <a target="_blank" href="privacy.html">Політику конфіденційності</a>. Користуючись Послугами, ви погоджуєтеся дотримуватися нашої Політики конфіденційності, яка включена в ці Юридичні умови. Зверніть увагу, що Послуги розміщуються у Великобританії. Якщо ви отримуєте доступ до Послуг з будь-якого іншого регіону світу відповідно до законів або інших вимог, що регулюють збір, використання або розкриття персональних даних, які відрізняються від чинного законодавства Сполученого Королівства, то, продовжуючи користуватися Послугами, ви передаєте свої дані до Сполученого Королівства та прямо погоджуєтеся на передачу та обробку ваших даних у Сполученому Королівстві.</p>
+
+<h3 id="dmca">17. ПОВІДОМЛЕННЯ ТА ПОЛІТИКА ЗАКОНУ ПРО ЗАХИСТ АВТОРСЬКИХ ПРАВ У ЦИФРОВУ ЕПОХУ (DMCA)</h3>
+
+<p>Сповіщення</p>
+
+<p>Ми поважаємо права інтелектуальної власності інших осіб. Якщо ви вважаєте, що будь-який матеріал, доступний у Службах або через них, порушує будь-які авторські права, якими ви володієте або контролюєте, негайно повідомте про це нашого призначеного агента з авторських прав, скориставшись контактною інформацією, наведеною нижче ("Сповіщення"). Копія вашого Повідомлення буде надіслана особі, яка розмістила або зберегла матеріал, про який йдеться в Повідомленні. Будь ласка, зверніть увагу, що відповідно до федерального законодавства ви можете бути притягнуті до відповідальності за збитки, якщо ви зробите суттєві спотворення в повідомленні. Таким чином, якщо ви не впевнені, що матеріали, розміщені в Службах або посилання на які містяться в них, порушують ваші авторські права, спершу зверніться до адвоката.</p>
+
+<p>Всі повідомлення повинні відповідати вимогам DMCA 17 USC § 512 (c) (3) і містити наступну інформацію: (1) фізичний або електронний підпис особи, уповноваженої діяти від імені власника виключного права, яке ймовірно порушено; (2) ідентифікацією захищеного авторським правом твору, на який, як стверджується, було порушено авторське право, або, якщо Сповіщення охоплює кілька захищених авторським правом творів у Службах, репрезентативний список таких творів у Службах; (3) ідентифікація матеріалу, який, як стверджується, порушує права або є предметом діяльності, що порушує авторські права, і який повинен бути видалений або доступ до якого повинен бути заборонений, а також інформацію, достатню для того, щоб ми могли знайти матеріал; (4) інформацію, достатню для того, щоб ми могли зв'язатися зі стороною, яка подала скаргу, наприклад, адресу, номер телефону та, за наявності, адресу електронної пошти, за якою можна зв'язатися зі стороною, яка подала скаргу; (5) заява про те, що сторона, яка подала скаргу, добросовісно припускає, що використання матеріалу у спосіб, на який скаржиться, не дозволено власником авторських прав, його агентом або законом; та (6) заява про те, що інформація в повідомленні є точною та під страхом відповідальності за надання неправдивих свідчень, що сторона, яка подала скаргу, уповноважена діяти від імені власника виключного права, яке ймовірно порушено.</p>
+
+<p>Зустрічне сповіщення</p>
+
+<p>Якщо ви вважаєте, що ваш захищений авторським правом матеріал видалено зі Служб унаслідок помилки або неправильної ідентифікації, ви можете надіслати письмове зустрічне сповіщення [нам/нашому призначеному агенту з авторських прав], використовуючи контактну інформацію, надану нижче ("Зустрічне сповіщення"). Щоб бути ефективним зустрічним сповіщенням відповідно до DMCA, ваше зустрічне сповіщення повинно містити в основному наступне: (1) ідентифікація матеріалу, який був видалений або вимкнений, і місце, в якому матеріал з'явився до його видалення або вимкнення; (2) заява про те, що ви згодні з юрисдикцією Федерального окружного суду, в якому знаходиться ваша адреса, або, якщо ваша адреса знаходиться за межами Сполучених Штатів, для будь-якого судового округу, в якому ми знаходимося; (3) заяву про те, що ви приймете процесуальні послуги від сторони, яка подала Повідомлення, або від агента сторони; (4) ваше ім'я, адреса та номер телефону; (5) заява під страхом покарання за надання неправдивих свідчень про те, що у вас є сумлінне припущення, що відповідний матеріал був видалений або вимкнений в результаті помилки або неправильної ідентифікації матеріалу, який потрібно видалити або відключити; та (6) ваш фізичний або електронний підпис.</p>
+
+<p>Якщо ви надішлете нам дійсне письмове зустрічне сповіщення, яке відповідає описаним вище вимогам, ми відновимо ваш видалений або вимкнений матеріал, якщо спочатку не отримаємо повідомлення від сторони, яка подає сповіщення про те, що така сторона подала до суду, щоб заборонити вам брати участь у діяльності, пов'язаній із відповідним матеріалом, що порушує права. Зверніть увагу, що якщо ви суттєво спотворите інформацію про те, що вимкнений або видалений вміст було видалено помилково або неправильно ідентифіковано, ви можете нести відповідальність за збитки, включаючи витрати та гонорари адвокатам. Подання неправдивого зустрічного сповіщення є лжесвідченням.</p>
+
+<p>Призначений агент з авторських прав</p>
+<ul>
+    <li>До уваги: Агент з авторських прав</li>
+    <li>офіс 227, Велика Окружна вулиця, 4б, Київ, Україна, 03680</li>
+    <li>info@vershyna-site.com.ua</li>
+</ul>
+
+<h3 id="terms">18. ТЕРМІН ДІЇ ТА ПРИПИНЕННЯ ДІЇ</h3>
+
+<p>Ці Юридичні умови зберігають повну юридичну силу та дію під час використання Служб. НЕ ОБМЕЖУЮЧИ БУДЬ-ЯКЕ ІНШЕ ПОЛОЖЕННЯ ЦИХ ЮРИДИЧНИХ УМОВ, МИ ЗАЛИШАЄМО ЗА СОБОЮ ПРАВО НА ВЛАСНИЙ РОЗСУД І БЕЗ ПОПЕРЕДЖЕННЯ АБО ВІДПОВІДАЛЬНОСТІ ВІДМОВИТИ В ДОСТУПІ ТА ВИКОРИСТАННІ ПОСЛУГ (ВКЛЮЧАЮЧИ БЛОКУВАННЯ ПЕВНИХ IP-АДРЕС) БУДЬ-ЯКІЙ ОСОБІ З БУДЬ-ЯКОЇ ПРИЧИНИ АБО БЕЗ ПРИЧИНИ, ВКЛЮЧАЮЧИ, БЕЗ ОБМЕЖЕНЬ, ПОРУШЕННЯ БУДЬ-ЯКИХ ЗАЯВ, ГАРАНТІЙ АБО УГОД, ЩО МІСТЯТЬСЯ В ЦИХ ЮРИДИЧНИХ УМОВАХ АБО БУДЬ-ЯКОМУ ЧИННОМУ ЗАКОНОДАВСТВІ ЧИ НОРМАТИВНИХ АКТАХ. МИ МОЖЕМО ПРИПИНИТИ ВАШЕ ВИКОРИСТАННЯ АБО УЧАСТЬ У ПОСЛУГАХ АБО ВИДАЛИТИ ВАШ ОБЛІКОВИЙ ЗАПИС І БУДЬ-ЯКИЙ ВМІСТ АБО ІНФОРМАЦІЮ, ЯКІ ВИ РОЗМІСТИЛИ, У БУДЬ-ЯКИЙ ЧАС БЕЗ ПОПЕРЕДЖЕННЯ НА ВЛАСНИЙ РОЗСУД.</p>
+
+<p>Якщо ми припинимо або призупинимо дію вашого облікового запису з будь-якої причини, вам забороняється реєструватися та створювати новий обліковий запис під своїм ім'ям, фальшивим або позиковим ім'ям або ім'ям будь-якої третьої сторони, навіть якщо ви можете діяти від імені третьої сторони. Окрім припинення або призупинення дії вашого облікового запису, ми залишаємо за собою право вжити відповідних юридичних заходів, включаючи, але не обмежуючись, переслідування цивільного, кримінального та судового захисту.</p>
+
+<h3 id="modifications">19. ЗМІНИ ТА ПЕРЕРВИ</h3>
+
+<p>Ми залишаємо за собою право змінювати, модифікувати або видаляти вміст Послуг у будь-який час або з будь-якої причини на власний розсуд без попереднього повідомлення. Однак ми не зобов'язані оновлювати будь-яку інформацію про наші Послуги. Ми також залишаємо за собою право змінювати або припиняти надання Послуг повністю або частково без попередження в будь-який час. Ми не несемо відповідальності перед вами або будь-якою третьою стороною за будь-які зміни, зміни ціни, призупинення або припинення надання Служб.</p>
+
+<p>Ми не можемо гарантувати, що Послуги будуть доступні в будь-який час. У нас можуть виникнути апаратні, програмні або інші проблеми або знадобитися технічне обслуговування, пов'язане зі Службами, що може призвести до перебоїв, затримок або помилок. Ми залишаємо за собою право змінювати, переглядати, оновлювати, призупиняти, припиняти або іншим чином змінювати Послуги в будь-який час і з будь-якої причини без попереднього повідомлення. Ви погоджуєтеся, що ми не несемо жодної відповідальності за будь-які втрати, пошкодження або незручності, спричинені вашою нездатністю отримати доступ до Послуг або використовувати їх під час будь-якого простою або припинення надання Послуг. Жодне положення цих Юридичних умов не буде тлумачитися як зобов'язання підтримувати та підтримувати Служби або надавати будь-які виправлення, оновлення чи випуски у зв'язку з цим.</p>
+
+<h3 id="law">20. РЕГУЛЮЮЧЕ ЗАКОНОДАВСТВО</h3>
+
+<p>Ці Правові умови регулюються та тлумачаться відповідно до законодавства Англії, а також чітко застосовується Конвенція Організації Об'єднаних Націй про договори міжнародної купівлі-продажу товарів. Якщо ваше звичайне місце проживання знаходиться в ЄС, США або будь-якій з інших 62 країн-учасниць конвенції, ви додатково володієте захистом, що надається вам обов'язковими положеннями законодавства у вашій країні проживання. Це означає, що ви можете пред'явити претензію щодо захисту своїх прав споживачів у зв'язку з цими Юридичними умовами в Англії або в будь-якій країні-учасниці конвенції, де ви проживаєте.</p>
+
+<h3 id="disputes">21. ВИРІШЕННЯ СПОРІВ</h3>
+
+<h5>Обов'язковий арбітраж</h5>
+
+<p>Якщо ви є резидентом Європейського Союзу, будь-які спори, що виникають у зв'язку з цими Юридичними умовами або пов'язані з ними, вирішуються арбітром, призначеним відповідно до Арбітражу та внутрішніх правил Європейського арбітражного суду, який є частиною Європейського арбітражного центру, розташованого в Страсбурзі. Місцем проведення такого арбітражу є Англія. Переважною мовою провадження є англійська. Застосовним правом для цих проваджень є законодавство Англії.</p>
+
+<p>Якщо ви є резидентом США, суперечки вирішуються арбітражем у Сполучених Штатах. Застосовним правом для цих проваджень є законодавство США.</p>
+
+<p>Для резидентів будь-якої іншої країни арбітражна локація та процедури є такими ж, як і для резидентів Європейського Союзу.</p>
+
+<h5>Обмеження</h5>
+
+<p>Сторони погоджуються, що будь-який арбітражний розгляд обмежується Спором між Сторонами окремо. У повному обсязі, дозволеному законом, (а) жоден арбітраж не може бути об'єднаний з будь-яким іншим провадженням; (б) немає права або повноважень на арбітражний розгляд будь-якого Спору на основі групового позову або використання процедур групового позову; та (c) немає права або повноважень на розгляд будь-якого Спору в передбачуваній представницькій якості від імені широкої громадськості або будь-яких інших осіб.</p>
+
+<h5>Винятки з арбітражу</h5>
+
+<p>Сторони погоджуються, що наступні Спори не підпадають під дію вищезазначених положень щодо обов'язкового арбітражу: (a) будь-які Спори, спрямовані на примусове виконання або захист, або щодо дійсності будь-яких прав інтелектуальної власності Сторони; (b) будь-який Спір, пов'язаний або виникає внаслідок звинувачень у крадіжці, піратстві, вторгненні в особисте життя або несанкціонованому використанні; та (c) будь-який позов про судову заборону. Якщо це положення буде визнано незаконним або таким, що не підлягає виконанню, жодна зі Сторін не вирішить арбітраж будь-якого Спору, що підпадає під цю частину цього положення, визнаного незаконним або таким, що не підлягає виконанню, і такий Спір вирішується судом компетентної юрисдикції в межах судів, перелічених для юрисдикції вище, і Сторони погоджуються підкорятися персональній юрисдикції цього суду.</p>
+
+<h3 id="corrections">22. ВИПРАВЛЕННЯ</h3>
+
+<p>У Службах може міститися інформація, яка містить друкарські помилки, неточності або упущення, зокрема описи, ціни, доступність та іншу інформацію. Ми залишаємо за собою право виправляти будь-які помилки, неточності або упущення, а також змінювати або оновлювати інформацію про Послуги в будь-який час без попереднього повідомлення.</p>
+
+<h3 id="disclaimer">23. ВІДМОВА ВІД ВІДПОВІДАЛЬНОСТІ</h3>
+
+<p>ПОСЛУГИ НАДАЮТЬСЯ НА УМОВАХ «ЯК Є» ТА «ЯК ДОСТУПНО». ВИ ПОГОДЖУЄТЕСЯ, ЩО КОРИСТУЄТЕСЯ ПОСЛУГАМИ НА ВЛАСНИЙ РИЗИК. У МАКСИМАЛЬНОМУ СТУПЕНІ, ДОЗВОЛЕНОМУ ЗАКОНОДАВСТВОМ, МИ ВІДМОВЛЯЄМОСЯ ВІД БУДЬ-ЯКИХ ПРЯМИХ АБО НЕПРЯМИХ ГАРАНТІЙ У ЗВ'ЯЗКУ З ПОСЛУГАМИ ТА ЇХ ВИКОРИСТАННЯМ, ВКЛЮЧАЮЧИ, БЕЗ ОБМЕЖЕНЬ, НЕПРЯМІ ГАРАНТІЇ ТОВАРНОГО СТАНУ, ПРИДАТНОСТІ ДЛЯ ПЕВНОЇ МЕТИ ТА НЕПОРУШЕННЯ ПРАВ НА ІНТЕЛЕКТУАЛЬНУ ВЛАСНІСТЬ. МИ НЕ ДАЄМО ЖОДНИХ ГАРАНТІЙ АБО ЗАЯВ ЩОДО ТОЧНОСТІ АБО ПОВНОТИ ВМІСТУ ПОСЛУГ АБО ЗМІСТУ БУДЬ-ЯКИХ ВЕБ-САЙТІВ АБО МОБІЛЬНИХ ДОДАТКІВ, ПОВ'ЯЗАНИХ ІЗ ПОСЛУГАМИ, І НЕ НЕСЕМО ВІДПОВІДАЛЬНОСТІ ЗА БУДЬ-ЯКІ (1) ПОМИЛКИ, ПОМИЛКИ АБО НЕТОЧНОСТІ ВМІСТУ ТА МАТЕРІАЛІВ, (2) ТІЛЕСНІ УШКОДЖЕННЯ АБО ПОШКОДЖЕННЯ МАЙНА БУДЬ-ЯКОГО ХАРАКТЕРУ,  В РЕЗУЛЬТАТІ ВАШОГО ДОСТУПУ ДО ПОСЛУГ ТА ЇХ ВИКОРИСТАННЯ, (3) БУДЬ-ЯКОГО НЕСАНКЦІОНОВАНОГО ДОСТУПУ АБО ВИКОРИСТАННЯ НАШИХ ЗАХИЩЕНИХ СЕРВЕРІВ ТА/АБО БУДЬ-ЯКОЇ ТА ВСІЄЇ ОСОБИСТОЇ ІНФОРМАЦІЇ ТА/АБО ФІНАНСОВОЇ ІНФОРМАЦІЇ, ЩО ЗБЕРІГАЄТЬСЯ В НИХ, (4) БУДЬ-ЯКОГО ПЕРЕРИВАННЯ АБО ПРИПИНЕННЯ ПЕРЕДАЧІ ДО АБО З ПОСЛУГ, (5) БУДЬ-ЯКИХ ПОМИЛОК, ВІРУСІВ, ТРОЯНСЬКИХ ПРОГРАМ ТОЩО, ЯКІ МОЖУТЬ ПЕРЕДАВАТИСЯ ДО АБО ЧЕРЕЗ ПОСЛУГИ БУДЬ-ЯКОЮ ТРЕТЬОЮ СТОРОНОЮ,  ТА/АБО (6) БУДЬ-ЯКІ ПОМИЛКИ ЧИ УПУЩЕННЯ В БУДЬ-ЯКОМУ ВМІСТІ ТА МАТЕРІАЛАХ, А ТАКОЖ БУДЬ-ЯКІ ВТРАТИ ЧИ ПОШКОДЖЕННЯ, ПОНЕСЕНІ ВНАСЛІДОК ВИКОРИСТАННЯ БУДЬ-ЯКОГО ВМІСТУ, РОЗМІЩЕНОГО, ПЕРЕДАНОГО АБО ІНШИМ ЧИНОМ НАДАНОГО ЧЕРЕЗ ПОСЛУГИ. МИ НЕ ГАРАНТУЄМО, НЕ СХВАЛЮЄМО, НЕ ГАРАНТУЄМО І НЕ БЕРЕМО НА СЕБЕ ВІДПОВІДАЛЬНІСТЬ ЗА БУДЬ-ЯКИЙ ПРОДУКТ АБО ПОСЛУГУ, ЩО РЕКЛАМУЄТЬСЯ АБО ПРОПОНУЄТЬСЯ ТРЕТЬОЮ СТОРОНОЮ ЧЕРЕЗ ПОСЛУГИ, БУДЬ-ЯКИЙ ВЕБ-САЙТ З ГІПЕРПОСИЛАННЯМ АБО БУДЬ-ЯКИЙ ВЕБ-САЙТ АБО МОБІЛЬНИЙ ДОДАТОК, ПРЕДСТАВЛЕНИЙ НА БУДЬ-ЯКОМУ БАНЕРІ АБО ІНШІЙ РЕКЛАМІ, І МИ НЕ БУДЕМО СТОРОНОЮ АБО БУДЬ-ЯКИМ ЧИНОМ НЕСЕМО ВІДПОВІДАЛЬНІСТЬ ЗА МОНІТОРИНГ БУДЬ-ЯКИХ ТРАНЗАКЦІЙ МІЖ ВАМИ І БУДЬ-ЯКИМИ СТОРОННІМИ ПОСТАЧАЛЬНИКАМИ ПРОДУКТІВ АБО ПОСЛУГ. ЯК І ПРИ ПОКУПЦІ ПРОДУКТУ АБО ПОСЛУГИ ЧЕРЕЗ БУДЬ-ЯКИЙ ЗАСІБ МАСОВОЇ ІНФОРМАЦІЇ АБО В БУДЬ-ЯКОМУ СЕРЕДОВИЩІ, ВИ ПОВИННІ ВИКОРИСТОВУВАТИ СВОЄ НАЙКРАЩЕ СУДЖЕННЯ І ПРОЯВЛЯТИ ОБЕРЕЖНІСТЬ, ДЕ ЦЕ ДОРЕЧНО.</p>
+
+<h3 id="liability">24. ОБМЕЖЕННЯ ВІДПОВІДАЛЬНОСТІ</h3>
+
+<p>НІ В ЯКОМУ РАЗІ МИ АБО НАШІ ДИРЕКТОРИ, СПІВРОБІТНИКИ АБО АГЕНТИ НЕ НЕСЕМО ВІДПОВІДАЛЬНОСТІ ПЕРЕД ВАМИ АБО БУДЬ-ЯКОЮ ТРЕТЬОЮ СТОРОНОЮ ЗА БУДЬ-ЯКІ ПРЯМІ, НЕПРЯМІ, ОПОСЕРЕДКОВАНІ, ПРИБЛИЗНІ, ВИПАДКОВІ, СПЕЦІАЛЬНІ АБО ШТРАФНІ ЗБИТКИ, ВКЛЮЧАЮЧИ ВТРАЧЕНИЙ ПРИБУТОК, ВТРАЧЕНИЙ ДОХІД, ВТРАТУ ДАНИХ АБО ІНШІ ЗБИТКИ, ЩО ВИНИКАЮТЬ ВНАСЛІДОК ВИКОРИСТАННЯ ВАМИ ПОСЛУГ, НАВІТЬ ЯКЩО НАМ БУЛО ПОВІДОМЛЕНО ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ. НЕЗВАЖАЮЧИ НА БУДЬ-ЯКІ ПРОТИЛЕЖНІ ТВЕРДЖЕННЯ, ЩО МІСТЯТЬСЯ В ЦЬОМУ ДОКУМЕНТІ, НАША ВІДПОВІДАЛЬНІСТЬ ПЕРЕД ВАМИ З БУДЬ-ЯКОЇ ПРИЧИНИ ТА НЕЗАЛЕЖНО ВІД ФОРМИ ПОЗОВУ ЗАВЖДИ БУДЕ ОБМЕЖЕНА СУМОЮ, СПЛАЧЕНОЮ ВАМИ НАМ ПРОТЯГОМ ШЕСТИ (6) МІСЯЦІВ ДО ВИНИКНЕННЯ БУДЬ-ЯКОЇ ПРИЧИНИ ПОЗОВУ. ДЕЯКІ ЗАКОНИ ТА МІЖНАРОДНІ ЗАКОНИ ШТАТІВ США НЕ ДОПУСКАЮТЬ ОБМЕЖЕНЬ НА НЕПРЯМІ ГАРАНТІЇ АБО ВИКЛЮЧЕННЯ ЧИ ОБМЕЖЕННЯ ПЕВНИХ ЗБИТКІВ. ЯКЩО ЦІ ЗАКОНИ ЗАСТОСОВУЮТЬСЯ ДО ВАС, ДЕЯКІ АБО ВСІ З НАВЕДЕНИХ ВИЩЕ ВІДМОВ ВІД ВІДПОВІДАЛЬНОСТІ АБО ОБМЕЖЕНЬ МОЖУТЬ НЕ ЗАСТОСОВУВАТИСЯ ДО ВАС, І ВИ МОЖЕТЕ МАТИ ДОДАТКОВІ ПРАВА.</p>
+
+<h3 id="indemnification">25. ВІДШКОДУВАННЯ ЗБИТКІВ</h3>
+
+<p>Ви погоджуєтеся захищати, відшкодовувати збитки та захищати нас, включаючи наші дочірні компанії, філії та всіх наших відповідних посадових осіб, агентів, партнерів та співробітників, від будь-яких втрат, збитків, відповідальності, претензій чи вимог, включаючи розумні гонорари адвокатів та витрати, здійснені будь-якою третьою стороною внаслідок або випливають з: (1) ваших внесків; (2) використання Послуг; (3) порушення цих Юридичних умов; (4) будь-яке порушення ваших заяв і гарантій, викладених у цих Юридичних умовах; (5) порушення вами прав третьої сторони, включаючи, але не обмежуючись, права інтелектуальної власності; або (6) будь-які явні шкідливі дії по відношенню до будь-якого іншого користувача Послуг, з яким ви підключилися через Послуги. Незважаючи на вищесказане, ми залишаємо за собою право за ваш рахунок взяти на себе виключний захист і контроль над будь-яким питанням, у зв'язку з яким ви зобов'язані відшкодувати нам збитки, і ви погоджуєтеся співпрацювати за свій рахунок з нашим захистом таких претензій. Ми докладемо розумних зусиль, щоб повідомити вас про будь-яку таку претензію, дію або провадження, які підлягають такому відшкодуванню, коли вам стане відомо про це.</p>
+
+<h3 id="userdata">26. ДАНІ КОРИСТУВАЧА</h3>
+
+<p>Ми зберігатимемо певні дані, які ви передаєте до Послуг з метою управління продуктивністю Послуг, а також дані, пов'язані з використанням вами Послуг. Хоча ми регулярно створюємо резервні копії даних, ви несете повну відповідальність за всі дані, які ви передаєте або які стосуються будь-якої діяльності, яку ви здійснили за допомогою Послуг. Ви погоджуєтеся з тим, що ми не несемо відповідальності перед вами за будь-яку втрату або пошкодження будь-яких таких даних, і цим ви відмовляєтеся від будь-якого права на позов проти нас, що випливає з будь-якої такої втрати або пошкодження таких даних.</p>
+
+<h3 id="electronic">27. ЕЛЕКТРОННІ КОМУНІКАЦІЇ, ТРАНЗАКЦІЇ ТА ПІДПИСИ</h3>
+
+<p>Відвідування Послуг, надсилання нам електронних листів та заповнення онлайн-форм є електронними комунікаціями. Ви погоджуєтеся отримувати електронні повідомлення та погоджуєтеся, що всі угоди, повідомлення, розкриття інформації та інші повідомлення, які ми надаємо вам в електронному вигляді, електронною поштою та в рамках Послуг, відповідають будь-якій юридичній вимозі щодо надання такого повідомлення в письмовій формі. ЦИМ ВИ ПОГОДЖУЄТЕСЯ НА ВИКОРИСТАННЯ ЕЛЕКТРОННИХ ПІДПИСІВ, КОНТРАКТІВ, ЗАМОВЛЕНЬ ТА ІНШИХ ЗАПИСІВ, А ТАКОЖ НА ЕЛЕКТРОННУ ДОСТАВКУ ПОВІДОМЛЕНЬ, ПОЛІТИК І ЗАПИСІВ ПРО ТРАНЗАКЦІЇ, ІНІЦІЙОВАНІ АБО ЗАВЕРШЕНІ НАМИ АБО ЧЕРЕЗ ПОСЛУГИ. Цим ви відмовляєтеся від будь-яких прав або вимог відповідно до будь-яких статутів, положень, правил, постанов або інших законів у будь-якій юрисдикції, які вимагають оригінального підпису, доставки або зберігання неелектронних записів, а також від платежів або надання кредитів будь-яким іншим способом, крім електронних засобів.</p>
+
+<h3 id="california">28. КОРИСТУВАЧІ ТА РЕЗИДЕНТИ КАЛІФОРНІЇ</h3>
+
+<p>Якщо будь-яка скарга з нами не вирішена задовільно, ви можете зв'язатися з відділом допомоги скаргам відділу побутового обслуговування Каліфорнійського департаменту у справах споживачів у письмовій формі за адресою 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 або по телефону (800) 952-5210 або (916) 445-1254.</p>
+
+<h3 id="misc">29. ІНШІ УМОВИ</h3>
+
+<p>Ці Юридичні умови та будь-які політики чи правила роботи, опубліковані нами в Службах або стосовно Послуг, складають повну угоду та взаєморозуміння між вами та нами. Наша нездатність скористатися або забезпечити виконання будь-якого права або положення цих Юридичних умов не означає відмову від такого права або положення. Ці Юридичні умови діють у повному обсязі, дозволеному законом. Ми можемо передати будь-які або всі наші права та обов'язки іншим особам у будь-який час. Ми не несемо відповідальності за будь-які втрати, пошкодження, затримки або бездіяльність, спричинені будь-якою причиною поза нашим розумним контролем. Якщо будь-яке положення або частина положення цих Юридичних умов буде визнано незаконним, недійсним або таким, що не підлягає виконанню, таке положення або частина положення вважається відокремленим від цих Юридичних умов і не впливає на дійсність і можливість виконання будь-яких інших положень. Між вами та нами не існує спільних підприємств, партнерських, трудових або агентських відносин у зв'язку з цими Юридичними умовами або використанням Служб. Ви погоджуєтеся, що ці Юридичні умови не будуть тлумачитися проти нас у зв'язку з їх складанням. Цим ви відмовляєтеся від будь-яких засобів захисту, які ви можете мати на підставі електронної форми цих Юридичних умов та відсутності підписання сторонами цих Юридичних умов для виконання цих Юридичних умов.</p>
+
+<h3 id="contact">30. ЗВ'ЯЖІТЬСЯ З НАМИ</h3>
+
+<p>Щоб вирішити скаргу щодо Послуг або отримати додаткову інформацію щодо використання Послуг, зв'яжіться з нами за адресою:</p>
+
+<p>м. Київ, вул. Велика Васильківська, 14</p>
+<p>+38 (044) 123-45-67</p>
+<p>info@vershyna-site.com.ua</p>
+
+<script>for(var domainElements=document.getElementsByClassName("domaintextname-u25EvMPV"),hostname=window.location.hostname,i=0;i<domainElements.length;i++)domainElements[i].innerHTML=hostname</script>
+           </div> 
+        </div>   
+    </div>
+</section>
+
+
+
+<footer class="footer-pad">
+	<div class="main-container footer-bg">
+		<div class="footer-wrapper">
+			<div class="footer-copyright">	
+                <div>Copyright</div>
+                <div>&#169;</div>
+                <div>2025</div>
+                <div>Вершина</div>                   			
+            </div>
+			<div class="footer-link-list">
+			<a class="footer-link" href="privacy.html"> Політика конфіденційності</a>
+			<a class="footer-link" href="term.html"> Правила та умови</a>
+			<a class="footer-link" href="disclaimer.html"> Застереження</a>
+		</div>
+		</div>
+	</div>
+</footer>
+</div>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000); 
+});
+  document.addEventListener("DOMContentLoaded", function() {
+            const teamElements = document.querySelectorAll('.team-element');
+            const teamImg = document.querySelector('.team-img');
+
+            if (teamElements.length === 0) {
+                teamImg.style.display = 'block';
+            }
+        });
+</script>
+
+
+</body>
+</html>
