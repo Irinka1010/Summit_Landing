@@ -12,7 +12,8 @@
 		<meta property="og:title" content="Вершина" />	
 		
 		<meta name="description" content="Вершина" />
-		<meta property="og:description" content="Вершина" />		
+		<meta property="og:description" content="Вершина" />
+		<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />		
 		<link rel="shortcut icon" href="logotip.png" type="image/x-icon" />
       
 	   
@@ -1579,6 +1580,7 @@
 	</div>
 </footer>
 </div>
+<div id="n8n-chat"></div>
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll('.slide');
@@ -1612,13 +1614,27 @@
         });
 </script>
 
-<script src="https://olden-maud-chirpiest.ngrok-free.dev/webhook/chat/widget.js"
-  data-webhook-url="https://olden-maud-chirpiest.ngrok-free.dev/webhook/c9c66869-7150-4788-a0e4-8a5a854ccbde/chat"
-  data-title="Вершина"
-  data-subtitle="Онлайн"
-  data-initial-message="Вітаю! Я Дмитро, асистент компанії Вершина. Чим можу допомогти?"
-  data-position="right"
-  data-theme-color="#2E75B6">
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://olden-maud-chirpiest.ngrok-free.dev/webhook/c9c66869-7150-4788-a0e4-8a5a854ccbde/chat',
+    target: '#n8n-chat',
+    mode: 'window',
+    showWelcomeScreen: false,
+    initialMessages: [
+      'Вітаю! Я Дмитро, асистент компанії Вершина.'
+    ],
+    i18n: {
+      en: {
+        title: 'Вершина',
+        subtitle: 'Онлайн',
+        footer: '',
+        getStarted: 'Почати чат',
+        inputPlaceholder: 'Напишіть повідомлення...'
+      }
+    }
+  });
 </script>
 
 	</body>
